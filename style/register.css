@@ -1,0 +1,38 @@
+#register1{
+        width: 700px;
+        height: 850px;
+        position: absolute;
+        top: 50%;
+        margin-left: 50px;
+        transform: translateY(-50%);
+        backdrop-filter: blur(3px);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 50px;
+        animation:arise_left 2.5s ease;
+      
+      }
+
+@keyframes arise_left{
+0%{
+margin-left: -1050px;
+
+}
+}
+
+.fade-l{
+        animation:disappears_left 2.5s ease;
+        
+
+}
+
+@keyframes disappears_left {
+        100%{
+                margin-left: -1050px;
+                }
+}
+
+.fade{
+
+        display:none;
+
+} 

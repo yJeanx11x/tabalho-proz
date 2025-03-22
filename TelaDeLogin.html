@@ -10,7 +10,7 @@
     <title>BzTurbos</title>
   </head>
   <body>
-    <section>
+    <section id="login">
       <form action="">
         <div class="Welcome">
           <h1>Bem-vindo de volta</h1>
@@ -27,11 +27,42 @@
             <p>Lembre de mim</p>
             <strong><a href="#">Esqueceu sua senha?</a></strong>
           </div>
+          
           <input class="btn" type="submit" value="ENTRAR" />
-          <a href="#">Registre-se aqui</a>
+          <a href="#" id="register">Registre-se aqui</a>
         </div>
 
       </form>
     </section>
+
+
+    <section id="register1" class="fade">
+      <form action="">
+        <div class="Welcome">
+          <h1>Cadastre-se seu Login</h1>
+          <small>Por favor, insira seus dados</small>
+        </div>
+
+        <div class="inputs">
+          <span>Nome Completo</span>
+          <input class="cred" type="text" placeholder="Nome" required />
+          <span>E-mail</span>
+          <input class="cred" type="email" placeholder="Email" required />
+         
+          <span>Senha</span>
+          <input class="cred" type="password" placeholder="Senha" required />
+          <span>Senha</span>
+          <input class="cred" type="password" placeholder="Senha" required />
+          <div class="check">
+      
+          </div>
+          
+          <input class="btn" type="submit" value="Criar Conta" />
+          <a href="#" id="register" class="btnEntrar" >Entrar</a>
+        </div>
+
+      </form>
+    </section>
+    <script src="script/script.js"></script>
   </body>
 </html>

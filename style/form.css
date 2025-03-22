@@ -3,19 +3,19 @@ section {
   height: 700px;
   position: absolute;
   top: 50%;
-margin-left: 50px;
+  margin-left: 50px;
   transform: translateY(-50%);
+
   backdrop-filter: blur(3px);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 50px ;
+  border-radius: 50px;
+  animation: to_emerge 1.5s both;
 }
 form {
   & .Welcome {
     font-size: 25pt;
     text-align: center;
     padding-block: 1.875rem;
-   
-
   }
   .inputs {
     width: 550px;
@@ -25,18 +25,21 @@ form {
     justify-content: center;
     margin: auto;
     padding: 20px;
-        color:  rgba(255, 255, 255, 0.7);
-p{
-        color:  rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+    p {
+      color: rgba(255, 255, 255, 0.7);
+    }
 
-}
-
+   #register{
+    margin: auto;
+    
+  }
     gap: 1rem;
 
     input::placeholder {
-        color: rgba(255, 255, 255, 0.7); 
-        font-style: italic; 
-        font-size: 16px; 
+      color: rgba(255, 255, 255, 0.7);
+      font-style: italic;
+      font-size: 16px;
     }
 
     input:focus {
@@ -55,7 +58,6 @@ p{
       border-bottom: 1px solid;
       padding-left: 15px;
       background: transparent;
-
     }
   }
 
@@ -67,7 +69,6 @@ p{
   flex-direction: column;
   justify-self: flex-end;
   gap: 10px;
-  
 
   & .check {
     display: flex;
@@ -75,14 +76,18 @@ p{
     gap: 5px;
     padding: 5px;
     padding-left: 25px;
-
   }
 
   a {
     /* display: flex; */
     display: flex;
     margin-left: 190px;
-color: #dd5d36;
+    color: #dd5d36;
+  }
+  a:hover{
+    color: #ec410d;
+
+
   }
 }
 .btn {
@@ -93,10 +98,29 @@ color: #dd5d36;
   border-radius: 5px;
   border: none;
   background-color: #dd5d36;
-  color:  rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   &:hover {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -40px inset;
-        cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -40px inset;
+    cursor: pointer;
     transition: 0.5s ease;
+  }
+}
+.emerge{
+  animation: to_emerge 3s both;
+}
+ @keyframes to_emerge{
+  0%{
+    transform: translateY(-1500px);
+  }
+}
+
+.disappear{
+  animation: disappear 1.5s both ease-in-out;
+  display: block;
+}
+
+@keyframes disappear{
+  100%{
+    transform: translatey(-1500px);
   }
 }
