@@ -15,7 +15,7 @@
         align-items: center;
         margin-top: 20px;   
         
-        animation: arise_above 1s cubic-bezier(.74,.22,.67,1);
+        animation: arise_above 2s cubic-bezier(.74,.22,.67,1);
         
         & header{
                 display: flex;
