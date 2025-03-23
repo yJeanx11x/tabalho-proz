@@ -1,0 +1,41 @@
+
+.cabecalho{
+        background-color: rgba(103, 107, 107, 0.118);
+        backdrop-filter: blur(13px);
+
+        width: 650px;
+        height: 55px;
+        border-radius: 8px;
+
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;        
+        
+        & header{
+                display: flex;
+                
+                ul, li{
+                        display: flex;
+                        align-content: center;
+                        gap: 40px;
+                        margin: auto;
+
+                        font-size: 16pt;
+                }
+                a::after{
+                        content: '';
+                        display: block;
+                        margin: auto;
+                        width: 0;
+                        height: 2px;
+                        background-color: #ec410d;
+                        transition: 0.3s;
+                }
+                a:hover::after{
+                       width: 100%;
+                }
+                
+        }
+}
