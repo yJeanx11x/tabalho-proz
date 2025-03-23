@@ -1,8 +1,8 @@
 
 .cabecalho{
-       
         
-        background-color: rgba(103, 107, 107, 0.118);
+
+       background-color: rgba(103, 107, 107, 0.118);
         backdrop-filter: blur(13px);
 
         width: 650px;
@@ -19,7 +19,6 @@
         
         & header{
                 display: flex;
-                
                 ul, li{
                         display: flex;
                         align-content: center;
