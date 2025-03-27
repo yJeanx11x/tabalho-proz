@@ -5,15 +5,15 @@
        background-color: rgba(103, 107, 107, 0.118);
         backdrop-filter: blur(13px);
 
-        width: 650px;
-        height: 55px;
+        width: 40.625rem;
+        height: 3.4375rem;
         border-radius: 8px;
 
         margin: auto;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin-top: 20px;   
+        margin-top: 1.25rem;   
         
         animation: arise_above 2s cubic-bezier(.74,.22,.67,1);
         
