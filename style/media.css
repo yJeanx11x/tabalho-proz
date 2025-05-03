@@ -23,7 +23,7 @@
             }
     }
     
-@media (max-width: 1024px) {
+@media (max-width: 1022px) {
   .hero {
     flex-direction: column;
     text-align: center;
