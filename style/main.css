@@ -1,5 +1,5 @@
 .main{
-    
+    position: relative;
     .box-escolhas{
         width: auto;
         height: 350px;
@@ -14,14 +14,16 @@
         width: 450px;
         border-radius: 15px;
         margin-right: 5px;
-
+        transition: all 1s ease;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
         /* background-size: cover; */
     }
     img:hover{
-    
-    width: 500px;
+        transition: 1s all ease;
+        width: 480px;
     transition: ease-in-out 0.5s;
-    }
+
+}
 
 
     form{
@@ -43,16 +45,21 @@
     .btn-enviar{
         background-color: #ec410d;
         border: none;
+        transition:all 1s ease ;
     }
     }
     .btn-enviar:hover{
     font-size: 18px;
     color:rgba(255, 255, 255, 0.753);
-    transition: 1s;
     cursor: pointer;
     transition: 2s ;
-    font-size: 18pt;
+    font-size: 12pt;
     background-color: #d93402;
 
+    }
+    select{
+        width: 250px;
+        height: 35px;
+        text-align: center;
     }
 }
